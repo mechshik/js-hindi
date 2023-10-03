@@ -16,12 +16,12 @@
 
 
             // requirement 
-            document.querySelector('button').addEventListener('click', this.handleClick)
+            document.querySelector('button').addEventListener('click', this.handleClick);
+       }
 
-        }
         handleClick(){
             console.log("button clicked");
-            console.log(this);
+            console.log(this.handleClick);
         }
     }
 
