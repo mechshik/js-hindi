@@ -6,7 +6,7 @@
     <title>Button Clicked</title>
 </head>
 <body>
-    
+    <button>Button Clicked</button>
 </body>
 <script>
     class React{
@@ -16,12 +16,13 @@
 
 
             // requirement 
-            document.querySelector('button').addEventListener('click', this.handleClick);
+            document.querySelector('button').addEventListener('click', this.handleClick.bind(this));
+            
        }
 
         handleClick(){
             console.log("button clicked");
-            console.log(this.handleClick);
+            console.log(this.server);
         }
     }
 
